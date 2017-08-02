@@ -21,14 +21,14 @@ npm install --save-dev enzyme react-addons-test-utils mocha chai sinon
 
 ------------------BDD---------------------------------
 #Install Cumber for BDD
-npm install --save-dev cucumber
+`npm install --save-dev cucumber`
 
 ###create directory
 features/addItem.feature
 features/step-definitions/additem.js
 
 #run cucumber
-$ node_modules/.bin/cucumber-js
+`node_modules/.bin/cucumber-js`
 
 #this can also run the step-definitions
 $ node_modules/.bin/cucumber-js -r features/step-definitions
@@ -51,30 +51,32 @@ npm install selenium web-driver (didn't work - but no worries, leave it for now)
 
 
 -------------------------------END TYPECHECKER SETUP----------------------------
-
+----------------------------------REDUX-----------------------------------------
+`npm install --save react-redux`
 ---------------------------FEATURES---------------------------------------------
 ---------------------------START DRAG-N-DROP--------------------------------------
-npm install --save react-dnd
-npm install --save react-dnd-html5-backend
+`npm install --save react-dnd`
+`npm install --save react-dnd-html5-backend`
 
 ####Enable Decorator Syntax############
 # enable decorator syntax {@XYZ} of ES7
-npm i -S babel-plugin-transform-decorators-legacy
+`npm i -S babel-plugin-transform-decorators-legacy`
 
 # Then update your .babelrc file to add the legacy decorator support plug-in like so:
 
-{
+`{
   "presets": ["es2015", "react", "stage-1"],
   "plugins": ["transform-decorators-legacy"]
-}
+}`
 
 ---------------------------END DRAG-N-DROP--------------------------------------
-----------------------------TYPECHECK on JS-------------------------------------
-# install prop-types library
-npm install --save prop-types
+-----------------------------------------------------------------
+# TYPECHECK on JS
+install prop-types library
+`npm install --save prop-types`
 --------------------------------------------------------------------------------
-=--------------------BUILD- CSS Preprocessor------------------------------------
-$ npm install node-sass --save-dev
+#BUILD- CSS Preprocessor
+`npm install node-sass --save-dev`
 
 added the following to package.json, under script
 +    "build-css": "node-sass src/ -o src/",
